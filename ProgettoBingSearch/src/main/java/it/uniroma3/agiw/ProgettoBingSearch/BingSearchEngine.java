@@ -17,7 +17,7 @@ public class BingSearchEngine {
 public static void getBing() throws Exception {
 		
 		HttpClient httpclient = new DefaultHttpClient();
-		String accountKey = "nEwUK3QkDk0Y5ZCLH/XEXWw4nUtYvEBe8PlTzUcCgaU";
+		String accountKey = "****";
         byte[] accountKeyBytes = Base64.encodeBase64((":" + accountKey).getBytes());
         String accountKeyEnc = new String(accountKeyBytes);
 
