@@ -16,12 +16,12 @@ import org.json.JSONObject;
 public class App{
 	
     public static void main( String[] args ) throws IOException{
-    	//prova
+    	
     	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
-    	final String accountKey = "<Your Bing API Key>";
+    	final String accountKey = ""; 
         final String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
 
-        final String query = URLEncoder.encode("'what is omonoia'", Charset.defaultCharset().name());
+        final String query = URLEncoder.encode("'Paolo Merialdo'", Charset.defaultCharset().name());
         final String bingUrl = String.format(bingUrlPattern, query);
 
         final String accountKeyEnc = Base64.getEncoder().encodeToString((accountKey + ":" + accountKey).getBytes());
