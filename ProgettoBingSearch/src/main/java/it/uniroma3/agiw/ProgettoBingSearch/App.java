@@ -16,10 +16,9 @@ public class App{
 	
     public static void main( String[] args ) throws IOException{
     	
-    	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
-    	final String accountKey = ""; 
+      	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
+    	final String accountKey = "tiJffDN1WJnkkJGEBrNtraDEsQaVoSmaplS++vI7S3A"; 
         final String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
-
         final String query = URLEncoder.encode("'Paolo Merialdo'", Charset.defaultCharset().name());
         final String bingUrl = String.format(bingUrlPattern, query);
 
@@ -36,13 +35,25 @@ public class App{
             while ((inputLine = in.readLine()) != null) {
                 response.append(inputLine);
             }
+            System.out.println("Forma del risultato ottenuto");
+            System.out.println(response.toString());
+            System.out.println();
+            
             final JSONObject json = new JSONObject(response.toString());
             final JSONObject d = json.getJSONObject("d");
             final JSONArray results = d.getJSONArray("results");
+            
+            
             final int resultsLength = results.length();
             for (int i = 0; i < resultsLength; i++) {
-                final JSONObject aResult = results.getJSONObject(i);
-                System.out.println(aResult.get("Url"));
+            	
+                final JSONObject aResult = results.getJSONObject(i);             
+                //mi salvo il contenuto del campo metadata che contiene la query che abbiamo eseguito
+                final JSONObject aQuery = (JSONObject) aResult.get("__metadata");
+                
+                System.out.println("URL risultante : "+aResult.get("Url"));
+                System.out.println("Query di partenza : "+aQuery.get("uri"));
+                System.out.println();
             }
         }finally {
     }
