@@ -25,14 +25,19 @@ public class GeneratoreNominativi {
 		}
 		
 		//Combino le due liste per avere una lista di coppie nome-cognome(Italiani)
-		String cognome;
-		for(String nome:nomi){
-			Random rand = new Random();
-			int randomNum = rand.nextInt((99 - 0) + 1) + 0;
-			cognome = cognomi.get(randomNum);
-			nomiCognomi.add(nome+" "+cognome);
+		int iterazioni = 10;
+		while(iterazioni>0){
+			String cognome;
+			for(String nome:nomi){
+				Random rand = new Random();
+				int randomNum = rand.nextInt((99 - 0) + 1) + 0;
+				cognome = cognomi.get(randomNum);
+				
+				if (!nomiCognomi.contains(nome+" "+cognome))
+					nomiCognomi.add(nome+" "+cognome);
+			}
+			iterazioni--;
 		}
-		
 		for(String x: nomiCognomi)
 			System.out.println(x);
 		
