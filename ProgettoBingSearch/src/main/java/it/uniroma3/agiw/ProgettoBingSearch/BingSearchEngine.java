@@ -17,11 +17,11 @@ public class BingSearchEngine {
 public static void getBing() throws Exception {
 		
 		HttpClient httpclient = new DefaultHttpClient();
-		String accountKey = "****";
+		String accountKey = "nEwUK3QkDk0Y5ZCLH/XEXWw4nUtYvEBe8PlTzUcCgaU";
         byte[] accountKeyBytes = Base64.encodeBase64((":" + accountKey).getBytes());
         String accountKeyEnc = new String(accountKeyBytes);
 
-        String query = "Barack%20Obama";
+        String query = "Barack Obama";
         int skipParam = 0;
         String bingURL = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%27"+URLEncoder.encode(query, "UTF-8")+"%27&Market=%27en-US%27&$format=JSON&$skip="+skipParam+"";
 
