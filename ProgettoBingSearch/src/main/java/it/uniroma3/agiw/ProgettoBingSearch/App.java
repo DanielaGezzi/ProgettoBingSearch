@@ -17,7 +17,7 @@ public class App{
     public static void main( String[] args ) throws IOException{
     	
       	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
-    	final String accountKey = "tiJffDN1WJnkkJGEBrNtraDEsQaVoSmaplS++vI7S3A"; 
+    	final String accountKey = "*******"; 
         final String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
         final String query = URLEncoder.encode("'Paolo Merialdo'", Charset.defaultCharset().name());
         final String bingUrl = String.format(bingUrlPattern, query);
