@@ -58,8 +58,13 @@ public class App{
         }catch(IOException e){
                 e.printStackTrace();
         
+        }catch(Exception e){
+            e.printStackTrace();
+            
         }finally {
-        
+        	//chiudo l'input stream
+        	in.close();
+        	
         }
     }
         
