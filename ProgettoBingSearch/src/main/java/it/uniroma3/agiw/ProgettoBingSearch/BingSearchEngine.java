@@ -2,6 +2,7 @@ package it.uniroma3.agiw.ProgettoBingSearch;
 
 import java.net.URLEncoder;
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -9,6 +10,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.util.Base64;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -19,7 +21,12 @@ public class BingSearchEngine{
       	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
     	final String accountKey = "*"; 
         final String accountKeyEnc = Base64.getEncoder().encodeToString((accountKey + ":" + accountKey).getBytes());
+        
         final String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
+        
+        String sCurrentLine;
+        BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/cognomi.txt"));
+        
         final String query = URLEncoder.encode("'Paolo Merialdo'", Charset.defaultCharset().name());
         final String bingUrl = String.format(bingUrlPattern, query);
 

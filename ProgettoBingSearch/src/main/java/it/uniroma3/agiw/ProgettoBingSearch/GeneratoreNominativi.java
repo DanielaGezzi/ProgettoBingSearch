@@ -1,11 +1,14 @@
 package it.uniroma3.agiw.ProgettoBingSearch;
 
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
 
 public class GeneratoreNominativi {
 
@@ -35,11 +38,19 @@ public class GeneratoreNominativi {
 				
 				if (!nomiCognomi.contains(nome+" "+cognome))
 					nomiCognomi.add(nome+" "+cognome);
+					nomiCognomi.add(cognome+" "+nome);
 			}
 			iterazioni--;
 		}
-		for(String x: nomiCognomi)
-			System.out.println(x);
+		FileOutputStream stream = new FileOutputStream("../ProgettoBingSearch/src/nomicognomi.txt");
+        PrintStream data = new PrintStream(stream);
+		for(String x: nomiCognomi){
+	        	  data.println(x);
+	          }
+	    data.close();
+	    stream.close();
+		
+			
 		
 		System.out.println("Ho generato "+nomiCognomi.size()+" combinazioni");
 	}
