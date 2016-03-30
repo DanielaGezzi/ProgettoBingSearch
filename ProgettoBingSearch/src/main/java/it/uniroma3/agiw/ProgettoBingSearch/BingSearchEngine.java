@@ -12,10 +12,10 @@ public class BingSearchEngine{
     	//1.Prendiamo la lista delle persone di cui vanno fatte le query
     	ArrayList<String> persone = gr.getLista();
     	
-//    	sp.executeQuery("Paolo Merialdo");
+    	sp.executeQuery("Paolo Merialdo");
     	//2.Per ogni elemento della lista, facciamo la query
-    	for(String s:persone)
-    		sp.executeQuery(s);
+//    	for(String s:persone)
+//    		sp.executeQuery(s);
     }
       
 }

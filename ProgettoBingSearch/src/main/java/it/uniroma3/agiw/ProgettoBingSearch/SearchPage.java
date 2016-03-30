@@ -24,7 +24,8 @@ public class SearchPage {
 	    
 //	    String sCurrentLine;
 //	    BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/cognomi.txt"));
-	    CreateFile file = new CreateFile();
+	    CreateFileQuery file = new CreateFileQuery();
+	    CreateFileResults file2 = new CreateFileResults();
 	    
 	    String query = URLEncoder.encode(q, Charset.defaultCharset().name());
 	    String bingUrl = String.format(bingUrlPattern, query);
@@ -40,24 +41,26 @@ public class SearchPage {
 	        while ((inputLine = in.readLine()) != null) {
 	            response.append(inputLine);
 	        }
-	        System.out.println("Forma del risultato ottenuto");
-	        System.out.println(response.toString());
-	        System.out.println();
+//	        System.out.println("Forma del risultato ottenuto");
+//	        System.out.println(response.toString());
+//	        System.out.println();
 	        
-	        final JSONObject json = new JSONObject(response.toString());
-	        final JSONObject d = json.getJSONObject("d");
-	        final JSONArray results = d.getJSONArray("results");
+	        JSONObject json = new JSONObject(response.toString());
+	        JSONObject d = json.getJSONObject("d");
+	        JSONArray results = d.getJSONArray("results");
 	        
 	        
 	        final int resultsLength = results.length();
 	        for (int i = 0; i < resultsLength; i++) {
 	        	
-	            final JSONObject aResult = results.getJSONObject(i);             
+	            JSONObject aResult = results.getJSONObject(i);             
 	            //mi salvo il contenuto del campo metadata che contiene la query che abbiamo eseguito
-	            final JSONObject aQuery = (JSONObject) aResult.get("__metadata");
+	            JSONObject aQuery = (JSONObject) aResult.get("__metadata");
 	            
 	            //Scrivo in un file i campi della query e l'url risultante
-	            file.writeFile(q,aQuery,aResult);
+	            file.writeFileQuery(q,aQuery,aResult);
+	            //Scrivo in un file la lista degli url che poi usiamo per scaricare le pagine
+	            file2.writeFileResults(aResult);
 //	            System.out.println("URL risultante : "+aResult.get("Url"));
 //	            System.out.println("Query di partenza : "+aQuery.get("uri"));
 //	            System.out.println();
