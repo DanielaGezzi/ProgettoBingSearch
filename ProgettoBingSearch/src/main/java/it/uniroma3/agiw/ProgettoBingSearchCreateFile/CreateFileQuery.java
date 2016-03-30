@@ -1,4 +1,4 @@
-package it.uniroma3.agiw.ProgettoBingSearch;
+package it.uniroma3.agiw.ProgettoBingSearchCreateFile;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class CreateFileQuery {
 	}
 	
 	public void writeFileQuery(String query,JSONObject aQuery, JSONObject aResult) throws IOException {;
-		this.listaQuery.write(query+"\t"+aQuery.get("uri")+"\t"+aResult.get("Url")+"\n");
+		this.listaQuery.append(query+"\t"+aQuery.get("uri")+"\t"+aResult.get("Url")+"\n");
 	}
 
 	public FileWriter getListaQuery() {

@@ -1,4 +1,4 @@
-package it.uniroma3.agiw.ProgettoBingSearch;
+package it.uniroma3.agiw.ProgettoBingSearchCreateFile;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -14,10 +14,8 @@ public class CreateFileResults {
 	}
 	
 	public void writeFileResults(JSONObject aResult) throws IOException {
-		System.out.println(aResult.get("Url"));
-		
-		this.listaResults.write("" + aResult.get("Url") + "\n");
-		
+//		System.out.println(aResult.get("Url"));
+		this.listaResults.append("" + aResult.get("Url") + "\n");
 	}
 
 	public FileWriter getListaResults() {
