@@ -10,7 +10,7 @@ public class CreateFileResults {
 	private FileWriter listaResults;
 	
 	public CreateFileResults() throws IOException{
-		this.listaResults = new FileWriter("../ProgettoBingSearch/src/listaResults.txt");;
+		this.listaResults = new FileWriter("../ProgettoBingSearch/src/listaResults.txt");
 	}
 	
 	public void writeFileResults(JSONObject aResult) throws IOException {
