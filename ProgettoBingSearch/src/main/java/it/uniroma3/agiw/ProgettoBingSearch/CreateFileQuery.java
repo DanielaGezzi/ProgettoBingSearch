@@ -8,16 +8,13 @@ import org.json.JSONObject;
 public class CreateFileQuery {
 	
 	private FileWriter listaQuery;
-	private FileWriter prova;
-	
+
 	public CreateFileQuery() throws IOException{
 		this.listaQuery = new FileWriter("../ProgettoBingSearch/src/listaQuery.txt");
-		this.prova = new FileWriter("../ProgettoBingSearch/src/prova.txt");
 	}
 	
 	public void writeFileQuery(String query,JSONObject aQuery, JSONObject aResult) throws IOException {;
 		this.listaQuery.write(query+"\t"+aQuery.get("uri")+"\t"+aResult.get("Url")+"\n");
-		this.prova.write(aResult.get("Url")+"\n");
 	}
 
 	public FileWriter getListaQuery() {
@@ -26,5 +23,10 @@ public class CreateFileQuery {
 
 	public void setListaQuery(FileWriter listaQuery) {
 		this.listaQuery = listaQuery;
+	}
+
+	public void close() throws IOException {
+		this.listaQuery.close();
+		
 	}
 }

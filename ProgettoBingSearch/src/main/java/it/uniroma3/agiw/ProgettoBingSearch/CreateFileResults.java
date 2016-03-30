@@ -15,7 +15,9 @@ public class CreateFileResults {
 	
 	public void writeFileResults(JSONObject aResult) throws IOException {
 		System.out.println(aResult.get("Url"));
-		this.listaResults.write(""+aResult.get("Url")+"\n");
+		
+		this.listaResults.write("" + aResult.get("Url") + "\n");
+		
 	}
 
 	public FileWriter getListaResults() {
@@ -24,6 +26,11 @@ public class CreateFileResults {
 
 	public void setListaResults(FileWriter listaResults) {
 		this.listaResults = listaResults;
+	}
+
+	public void close() throws IOException {
+		this.listaResults.close();
+		
 	}
 
 }
