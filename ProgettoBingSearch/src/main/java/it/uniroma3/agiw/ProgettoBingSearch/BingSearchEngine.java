@@ -1,27 +1,21 @@
 package it.uniroma3.agiw.ProgettoBingSearch;
 
-import java.net.URLEncoder;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.nio.charset.Charset;
-import java.util.Base64;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
+import java.util.ArrayList;
 
 public class BingSearchEngine{
     
     public static void main( String[] args ) throws IOException{
     	SearchPage sp = new SearchPage();
+    	GeneratoreLista gr = new GeneratoreLista();
+    	ArrayList<String> persone = gr.getLista();
+    	//1.Prendiamo la lista delle persone di cui vanno fatte le query
     	
- 
-    	
-    	sp.executeQuery("Paolo Merialdo");
+    	//2.Per ogni elemento della lista, facciamo la query
+    	for(String s:persone)
+    		sp.executeQuery(s);
     }
       
 }
