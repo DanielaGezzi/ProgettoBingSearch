@@ -29,8 +29,7 @@ public class CreateFileResults {
 	}
 
 	public void close() throws IOException {
-		this.listaResults.close();
-		
+		this.listaResults.close();	
 	}
 
 }
