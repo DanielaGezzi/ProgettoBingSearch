@@ -81,6 +81,8 @@ public class SearchPage {
 	    	//chiudo l'input stream
 	    	in.close();
 	    	
+	    	
 	    }
+	    
 	}
 }
