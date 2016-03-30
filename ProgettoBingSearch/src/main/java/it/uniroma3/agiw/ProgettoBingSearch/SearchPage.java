@@ -1,6 +1,7 @@
 package it.uniroma3.agiw.ProgettoBingSearch;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,6 +26,8 @@ public class SearchPage {
 	    
 //	    String sCurrentLine;
 //	    BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/cognomi.txt"));
+	    
+	    
 	    CreateFileQuery file = new CreateFileQuery();
 	    CreateFileResults file2 = new CreateFileResults();
 	    
@@ -67,6 +70,7 @@ public class SearchPage {
 //	            System.out.println();
 	        
 	        }
+	       
 	    }catch(IOException e){
 	        e.printStackTrace();
 	    
