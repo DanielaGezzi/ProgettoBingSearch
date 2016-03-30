@@ -7,6 +7,10 @@ import java.util.ArrayList;;
 public class GeneratoreLista {
 	private ArrayList<String> lista;
 	
+	public GeneratoreLista(){
+		this.lista = new ArrayList<String>();
+	}
+	
 	public void creaLista() throws IOException{
     	String currentLine;
     	BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/ing2.txt"));

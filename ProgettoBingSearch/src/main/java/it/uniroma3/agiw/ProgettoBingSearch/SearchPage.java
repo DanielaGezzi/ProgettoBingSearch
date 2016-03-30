@@ -24,6 +24,7 @@ public class SearchPage {
 	    
 //	    String sCurrentLine;
 //	    BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/cognomi.txt"));
+	    CreateFile file = new CreateFile();
 	    
 	    String query = URLEncoder.encode(q, Charset.defaultCharset().name());
 	    String bingUrl = String.format(bingUrlPattern, query);
@@ -55,9 +56,11 @@ public class SearchPage {
 	            //mi salvo il contenuto del campo metadata che contiene la query che abbiamo eseguito
 	            final JSONObject aQuery = (JSONObject) aResult.get("__metadata");
 	            
-	            System.out.println("URL risultante : "+aResult.get("Url"));
-	            System.out.println("Query di partenza : "+aQuery.get("uri"));
-	            System.out.println();
+	            //Scrivo in un file i campi della query e l'url risultante
+	            file.writeFile(q,aQuery,aResult);
+//	            System.out.println("URL risultante : "+aResult.get("Url"));
+//	            System.out.println("Query di partenza : "+aQuery.get("uri"));
+//	            System.out.println();
 	        
 	        }
 	    }catch(IOException e){
