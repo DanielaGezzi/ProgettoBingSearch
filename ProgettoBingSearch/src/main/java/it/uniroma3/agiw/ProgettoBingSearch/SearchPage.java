@@ -63,14 +63,18 @@ public class SearchPage {
 	            
 	            //Scrivo in un file i campi della query e l'url risultante
 	            file.writeFileQuery(q,aQuery,aResult);
+	            
 	            //Scrivo in un file la lista degli url che poi usiamo per scaricare le pagine
 	            file2.writeFileResults(aResult);
+	            
 //	            System.out.println("URL risultante : "+aResult.get("Url"));
 //	            System.out.println("Query di partenza : "+aQuery.get("uri"));
 //	            System.out.println();
 	        
 	        }
-	       
+
+	        file.close();
+	        file2.close();
 	    }catch(IOException e){
 	        e.printStackTrace();
 	    

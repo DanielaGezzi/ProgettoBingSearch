@@ -45,4 +45,6 @@ Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query=
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=44&$top=1	http://www.youtube.com/watch?v=QQ6HtXq4N94
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=45&$top=1	http://cabibbo.dia.uniroma3.it/eiiddr/
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=46&$top=1	http://www.un-industria.it/Public/ImgInf/Merialdo_Paolo.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=47&$top=1	http://www.freeb
+Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=47&$top=1	http://www.freebase.com/m/09pbw73
+Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=48&$top=1	http://www.merialdo.it/cgi-bin/documents/20041215155546-001.htm
+Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=49&$top=1	http://slideplayer.it/slide/586740/
