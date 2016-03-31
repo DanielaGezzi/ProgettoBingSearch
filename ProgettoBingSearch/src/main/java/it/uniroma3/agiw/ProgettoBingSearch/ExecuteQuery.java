@@ -10,6 +10,7 @@ public class ExecuteQuery {
 		for(String s:persone)
 			sp.executeQuery(s);
 		
+		/*Chiudo i file in cui ho scritto i risultati delle query*/
 		sp.getFile().close();
 		sp.getFile2().close();
    	}

@@ -27,7 +27,7 @@ public class SearchPage {
 	
 	public void executeQuery(String q) throws IOException{
 	  	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
-		String accountKey = "***"; 
+		String accountKey = "tiJffDN1WJnkkJGEBrNtraDEsQaVoSmaplS++vI7S3A"; 
 	    String accountKeyEnc = Base64.getEncoder().encodeToString((accountKey + ":" + accountKey).getBytes());
 	    
 	    String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
@@ -74,9 +74,9 @@ public class SearchPage {
 	            //Scrivo in un file la lista degli url che poi usiamo per scaricare le pagine
 	            this.file2.writeFileResults(aResult);
 	            
-//	            System.out.println("URL risultante : "+aResult.get("Url"));
-//	            System.out.println("Query di partenza : "+aQuery.get("uri"));
-//	            System.out.println();
+	            System.out.println("URL risultante : "+aResult.get("Url"));
+	            System.out.println("Query di partenza : "+aQuery.get("uri"));
+	            System.out.println();
 	        
 	        }
 
