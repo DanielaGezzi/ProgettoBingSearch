@@ -27,7 +27,7 @@ public class SearchPage {
     	
 	public void executeQuery(String q, int n_results) throws IOException{
 	  	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
-		String accountKey = "tiJffDN1WJnkkJGEBrNtraDEsQaVoSmaplS++vI7S3A"; 
+		String accountKey = "AAAAAAAAAAAAAAA"; 
 	    String accountKeyEnc = Base64.getEncoder().encodeToString((accountKey + ":" + accountKey).getBytes());
 	    String bingUrlPattern = "";
 	    

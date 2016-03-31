@@ -22,9 +22,9 @@ public class ProvaDropbox {
 
 //    public static void main(String args[]) throws DbxException, IOException, IOException {
 //
-//        final String APP_KEY = "zbho9efejgv73oo";
-//        final String APP_SECRET = "1o5fln8q4g6hcmw";
-//    	final String ACCESS_TOKEN = "z6WyyNOBJxwAAAAAAAAGuXEhadqZd19_Pvv8YVbpcacZPbv3z6m9MHLxLEL4pJ0T";
+//        final String APP_KEY = "AAAAAAAAAAAAAAA";
+//        final String APP_SECRET = "AAAAAAAAAAAAA";
+//    	final String ACCESS_TOKEN = "AAAAAAAAAAAAAAA";
 //    	
 //    	DbxAppInfo appInfo = new DbxAppInfo(APP_KEY, APP_SECRET);
 //
