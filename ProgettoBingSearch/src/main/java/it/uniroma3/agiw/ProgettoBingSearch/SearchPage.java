@@ -69,34 +69,34 @@ public class SearchPage {
 	            JSONObject aQuery = (JSONObject) aResult.get("__metadata");
 	            
 	            //Scrivo in un file i campi della query e l'url risultante
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	            file.writeFileQuery(q,aQuery,aResult);
-=======
+//=======
 	            this.file.writeFileQuery(q,aQuery,aResult);
->>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
+//>>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
 	            
 	            //Scrivo in un file la lista degli url che poi usiamo per scaricare le pagine
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	            file2.writeFileResults(aResult);
 	            
 //	            System.out.println("URL risultante : "+aResult.get("Url"));
 //	            System.out.println("Query di partenza : "+aQuery.get("uri"));
 //	            System.out.println();
-=======
+//=======
 	            this.file2.writeFileResults(aResult);
 	            
 	            System.out.println("URL risultante : "+aResult.get("Url"));
 	            System.out.println("Query di partenza : "+aQuery.get("uri"));
 	            System.out.println();
->>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
+//>>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
 	        
 	        }
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	        file.close();
 	        file2.close();
-=======
+//=======
 
->>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
+//>>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
 	    }catch(IOException e){
 	        e.printStackTrace();
 	    
