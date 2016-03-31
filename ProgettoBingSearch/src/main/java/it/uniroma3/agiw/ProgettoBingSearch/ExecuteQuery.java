@@ -7,9 +7,11 @@ public class ExecuteQuery {
 	
 	public void execute(SearchPage sp, ArrayList<String> persone) throws IOException {
 		
-		for(String s:persone)
-			sp.executeQuery(s);
-		
+		for(String s:persone){
+			sp.executeQuery(s,1);   //trovo i primi 50 risultati
+			sp.executeQuery(s,2);	//trovo i secondi 50 risultati
+		}
+			
 		/*Chiudo i file in cui ho scritto i risultati delle query*/
 		sp.getFile().close();
 		sp.getFile2().close();

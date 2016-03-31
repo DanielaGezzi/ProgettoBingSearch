@@ -24,26 +24,29 @@ public class SearchPage {
     	this.file = new CreateFileQuery();
     	this.file2 = new CreateFileResults();
     }
-	
-	public void executeQuery(String q) throws IOException{
+    	
+	public void executeQuery(String q, int n_results) throws IOException{
 	  	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
 		String accountKey = "tiJffDN1WJnkkJGEBrNtraDEsQaVoSmaplS++vI7S3A"; 
 	    String accountKeyEnc = Base64.getEncoder().encodeToString((accountKey + ":" + accountKey).getBytes());
+	    String bingUrlPattern = "";
 	    
-	    String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
-//		https://api.datamarket.azure.com/Bing/Search/Web?Query=%27%Paolo%20Merialdo%27&Market=%27it-IT%27&$format=JSON
-	    
+	    //Se è la prima query, prendiamo i primi 50 risultati, altrimenti i secondi 50
+	    if(n_results == 1)
+	    	bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
+	    else if(n_results == 2)
+	    	bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON&$skip=50&$top=50";    
+//	    String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
+//		https://api.datamarket.azure.com/Bing/Search/Web?Query=%27%Paolo%20Merialdo%27&Market=%27it-IT%27&$format=JSON	    
 //	    String sCurrentLine;
 //	    BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/cognomi.txt"));
-	    
-	    
-	    
+	        
 	    String query = URLEncoder.encode(q, Charset.defaultCharset().name());
 	    String bingUrl = String.format(bingUrlPattern, query);
 	
 	    URL url = new URL(bingUrl);
 	    URLConnection connection = url.openConnection();
-	    connection.setRequestProperty("Authorization", "Basic " + accountKeyEnc);
+	    connection.setRequestProperty("Authorization", "Basic " + accountKeyEnc);    
 	    BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 	    
 	    try {
@@ -52,9 +55,9 @@ public class SearchPage {
 	        while ((inputLine = in.readLine()) != null) {
 	            response.append(inputLine);
 	        }
-//	        System.out.println("Forma del risultato ottenuto");
-//	        System.out.println(response.toString());
-//	        System.out.println();
+	        System.out.println("Forma del risultato ottenuto");
+	        System.out.println(response.toString());
+	        System.out.println();
 	        
 	        JSONObject json = new JSONObject(response.toString());
 	        JSONObject d = json.getJSONObject("d");
@@ -74,10 +77,11 @@ public class SearchPage {
 	            //Scrivo in un file la lista degli url che poi usiamo per scaricare le pagine
 	            this.file2.writeFileResults(aResult);
 	            
-	            System.out.println("URL risultante : "+aResult.get("Url"));
-	            System.out.println("Query di partenza : "+aQuery.get("uri"));
-	            System.out.println();
-	        
+//	            System.out.println("URL risultante : "+aResult.get("Url"));
+//	            System.out.println("Query di partenza : "+aQuery.get("uri"));
+//	            System.out.println();
+//	            System.out.println("Ho trovato "+i+" risultati");
+	            
 	        }
 
 	    }catch(IOException e){
@@ -92,7 +96,7 @@ public class SearchPage {
 	    	
 	    	
 	    }
-
+	    
 //        this.file.close();
 //        this.file2.close();
 	}
