@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=0&$top=1	http://merialdo.dia.uniroma3.it/
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=1&$top=1	http://it.linkedin.com/in/paolomerialdo
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=2&$top=1	https://sites.google.com/site/paolomerialdo/
@@ -48,3 +49,55 @@ Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query=
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=47&$top=1	http://www.inf.uniroma3.it/?page_id=367
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=48&$top=1	http://informatica.ing.uniroma3.it/wp-content/uploads/2012/09/LII-secondo-semestre-03.pdf
 Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=49&$top=1	http://host.uniroma3.it/scuole/astre/pages/didattica/biennio_14-16/corsi/idea_innovativa.php
+=======
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=0&$top=1	https://it.linkedin.com/in/salvatore-abate-99160023
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=1&$top=1	http://www.paginebianche.it/A/Salvatore-Abate.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=2&$top=1	https://it-it.facebook.com/public/Salvatore-Abbate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=3&$top=1	http://www.ibs.it/libri/abate+salvatore/libri+di+abate+salvatore.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=4&$top=1	http://www.facebook.com/salvatore.abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=5&$top=1	http://www.liquida.it/salvatore-abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=6&$top=1	http://www.libreriauniversitaria.it/libri-autore_abate+salvatore-salvatore_abate.htm
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=7&$top=1	https://www.linkedin.com/pub/dir/salvatore/abbate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=8&$top=1	http://www.paginegialle.it/villafranca-di-verona-vr/commercialista/abate-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=9&$top=1	http://aziende.virgilio.it/3348475/salvatore-abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=10&$top=1	http://odcecpa.it/it/elenchi/scheda.php?id=4001&ala=
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=11&$top=1	http://www.fotocommunity.it/fotografo/salvatore-abate/2202057
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=12&$top=1	http://www.paginegialle.it/abbate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=13&$top=1	https://www.cylex.it/firenze/abate-salvatore--geom---7168707.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=14&$top=1	http://www.iis-lancia.it/chi-siamo/le-nostre-sedi/itis-alberto-salvatore-lirelli/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=15&$top=1	http://247.libero.it/search/salvatore+abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=16&$top=1	http://www.qds.it/21032-curriculum-salvatore-abate-1.htm
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=17&$top=1	http://www.amazon.it/Salvatore-Abbate-Musica-Digitale/s?ie=UTF8&page=1&rh=n%3A1748203031%2Ck%3ASalvatore%20Abbate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=18&$top=1	https://www.infojobs.it/salvatore-abbate.prf
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=19&$top=1	http://www.ibs.it/code/9788820733490/abate-salvatore/costellazioni-mitografia.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=20&$top=1	http://gossip.libero.it/search/salvatore-abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=21&$top=1	http://247.libero.it/dsearch/salvatore+abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=22&$top=1	https://www.freetimemagazine.it/boxes/business-box/salvatore-abate-e-gia-allopera/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=23&$top=1	https://www.cylex.it/napoli/abbate-salvatore-7169304.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=24&$top=1	http://www.qds.it/21031-salvatore-abate-imprenditori-uniti-per-il-bene-comune.htm
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=25&$top=1	http://aziende.virgilio.it/17164762/abbate-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=26&$top=1	http://www.biziz.it/abate-salvatore-palermo/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=27&$top=1	https://www.trovaincitta.com/negozi-giocattoli/8-abate-salvatore-gaggi.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=28&$top=1	http://www.abebooks.it/ricerca-libro/autore/salvatore-abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=29&$top=1	http://www.wuz.it/biografia/229222/Abate-Salvatore.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=30&$top=1	http://palermo.virgilio.it/mappa/azienda/070C3560-5B7C-552C-E050-A8C08D2610C2/assicurazioni/palermo-pa/abate-salvatore/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=31&$top=1	http://www.treccani.it/enciclopedia/tag/salvatore-abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=32&$top=1	http://gaggi.paginegialle.it/sicilia/gaggi/salvatore-abate.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=33&$top=1	http://www.informazione-aziende.it/Azienda_ALBA-DI-ABATE-SALVATORE-C-SAS
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=34&$top=1	http://www.infojobs.it/salvatore-abate.prf
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=35&$top=1	http://www.liberliber.it/online/autori/autori-a/salvatore-abbate-migliore/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=36&$top=1	http://www.ilmare.com/autori/abate-salvatore.php
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=37&$top=1	http://www.abbaziasansalvatore.it/index.php?option=com_content&view=article&id=83:abbazia-di-abbadia-san-salvatore&catid=29&Itemid=487
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=38&$top=1	http://www.icitta.it/abate_salvatore-4465922-a.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=39&$top=1	http://palermo.virgilio.it/mappa/azienda/ZRBXQO24359611/22683172/salvatore-abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=40&$top=1	http://www.yelp.it/biz/abate-salvatore-villafranca-di-verona
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=41&$top=1	https://www.ricercare-imprese.it/napoli/1520986-caffe-carolina-di-abate-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=42&$top=1	http://www.catalogo.zanichelli.it/Pages/Autore?id_author=167161
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=43&$top=1	http://www.biziz.it/abate-salvatore-verona/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=44&$top=1	http://www.whitepages.com/name/Salvatore-Abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=45&$top=1	http://www.informazione-aziende.it/Aziende_quotazione_ABATE-SALVATORE
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=46&$top=1	http://www.icitta.it/abate_salvatore-2106451-a.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=47&$top=1	http://www.geometrifirenze.it/albodettaglio.asp?pkid=13
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=48&$top=1	http://www.tuugo.it/Companies/abbate-salvatore_1402096/0170001964276
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=49&$top=1	https://www.ricercare-imprese.it/marsala/odontoprotesi-abate-di-abate-andrea-e-abate-salvatore
+>>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
