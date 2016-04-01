@@ -29,7 +29,7 @@ public class DownloadPages {
 //			downloadFromURL("/Users/RobertoNunziato/Desktop/Prova/"+a[2]+".html", currentLine);
 			cont++;
 		}
-		
+		br.close();
 		System.out.println("Ho letto e scaricato "+cont+" righe dal file dei risultati");
 	}
 	
