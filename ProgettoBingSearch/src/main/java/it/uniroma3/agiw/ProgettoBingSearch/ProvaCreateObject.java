@@ -12,7 +12,7 @@ import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 
 public class ProvaCreateObject {
-
+	//public static final int DEFAULT_STREAM_BUFFER_SIZE = 2000;
 	public static void main(String[] args) throws IOException {
 		
 		
@@ -31,9 +31,13 @@ public class ProvaCreateObject {
 		ByteArrayInputStream input = new ByteArrayInputStream(pagina.getBytes());
 		ObjectMetadata meta =  new ObjectMetadata();
 	    //la riga seguente mi dà ancora errore se la attivo, omettendola mi dà un warning
+		byte[] bytes = IOUtils.toByteArray(input);
+		Long contentLength = Long.valueOf(bytes.length);
+		meta.setContentLength(contentLength);
+		ByteArrayInputStream input2 = new ByteArrayInputStream(pagina.getBytes());
 		//meta.setContentLength(Long.valueOf(IOUtils.toByteArray(input).length));
-		conn.putObject("prova-agiw", "stupido.txt", input, meta);
-		
+		conn.putObject("prova-agiw", "stupido.txt", input2, meta);
+		//System.out.println(meta.);
 		
 	}
 

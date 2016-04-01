@@ -1,6 +1,7 @@
 package it.uniroma3.agiw.ProgettoBingSearch;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -10,6 +11,12 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.apache.commons.io.IOUtils;
+
+import com.amazonaws.auth.profile.ProfileCredentialsProvider;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.dropbox.core.DbxException;
 import com.dropbox.core.v2.files.UploadErrorException;
 
@@ -24,13 +31,17 @@ public class DownloadPages {
 		/*Mi scorro tutta la lista degli URL e lancio lo scarimento dei file*/
 		while ((currentLine = br.readLine()) != null){
 //			String[] a = currentLine.split("/");			
+			
 			/*Il file lo rinomino con l'url (Solo il dominio puro, www. ecc.)*/
-			downloadFromURL("/Users/RobertoNunziato/Desktop/Prova/"+cont+".html", currentLine);
+			downloadURLtoS3("prova-agiw", "provadl2/page"+cont, currentLine);
+			
+			/*Il file lo rinomino con l'url (Solo il dominio puro, www. ecc.)*/
+//			downloadFromURL("/Users/RobertoNunziato/Desktop/Prova/"+cont+".html", currentLine);
 //			downloadFromURL("/Users/RobertoNunziato/Desktop/Prova/"+a[2]+".html", currentLine);
 			cont++;
 		}
 		
-		System.out.println("Ho letto e scaricato "+cont+" righe dal file dei risultati");
+		System.out.println("Ho letto "+cont+" righe dal file dei risultati");
 	}
 	
 	public void downloadFromURL(String filename, String URL) throws UploadErrorException, DbxException {
@@ -68,6 +79,57 @@ public class DownloadPages {
 	        
 	        conn.disconnect();
 	    
+	    } catch (MalformedURLException e) {
+	        e.printStackTrace();
+	    
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	
+	}
+	
+	public void downloadURLtoS3(String bucket_name, String key_name, String URL) throws UploadErrorException, DbxException {
+	    URL url;
+
+	    try {
+	        url = new URL(URL);
+	        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+	        conn.setRequestMethod("GET");
+	        conn.connect();
+	        
+	        if (conn.getResponseCode()!=HttpURLConnection.HTTP_OK)
+	            return;
+
+	        InputStream in = conn.getInputStream();
+	        
+	        //con la riga che segue effettuo l'accesso sincronizzato già con aws toolkit eclipse
+	        AmazonS3 aws_conn = new AmazonS3Client(new ProfileCredentialsProvider());        
+	       
+	        /*per effettuare l'acceso con qualsiasi account aws
+	        *  
+	        AWSCredentials credentials = new BasicAWSCredentials(
+					"YourAccessKeyID", 
+					"YourSecretAccessKey");
+			
+			AmazonS3 aws_conn = new AmazonS3Client(credentials);
+			*/
+	        
+	        
+				/*questo primo input stream viene direttamente dalla connessione http
+	        e lo uso per copiare momentaneamente i dati in una nuova struttura
+	        e per costruire i metadata con la dimensione del trasferimento
+	         (obbligatoria sennò aws scapoccia)*/
+			ObjectMetadata meta =  new ObjectMetadata();
+			byte[] bytes = IOUtils.toByteArray(in);
+			Long contentLength = Long.valueOf(bytes.length);
+			meta.setContentLength(contentLength);
+			 conn.disconnect();
+			/*
+			imposto input2 come nuovo input stream per aws e creo il file nel bucket
+			 */
+	        ByteArrayInputStream input2 = new ByteArrayInputStream(bytes);
+			aws_conn.putObject(bucket_name, key_name, input2, meta);
+
 	    } catch (MalformedURLException e) {
 	        e.printStackTrace();
 	    
