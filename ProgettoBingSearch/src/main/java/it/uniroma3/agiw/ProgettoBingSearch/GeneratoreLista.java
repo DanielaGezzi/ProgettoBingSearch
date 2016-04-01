@@ -17,6 +17,7 @@ public class GeneratoreLista {
     	while ((currentLine = br.readLine()) != null) {
     		this.lista.add(currentLine);
     	}
+    	br.close();
 	}
 	
 	public ArrayList<String> getLista() throws IOException {
