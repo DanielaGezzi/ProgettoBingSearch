@@ -1,55 +1,3 @@
-<<<<<<< HEAD
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=0&$top=1	http://merialdo.dia.uniroma3.it/
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=1&$top=1	http://it.linkedin.com/in/paolomerialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=2&$top=1	https://sites.google.com/site/paolomerialdo/
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=3&$top=1	http://merialdo.dia.uniroma3.it/shortcv_paolo_merialdo.html
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=4&$top=1	http://uniroma3.it/persona.php?persona=ExNa54RU7qkEFfNIMc1wEc5Lv32U/ytl00f6tURvEGs=
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=5&$top=1	http://europa.uniroma3.it/centrorossidoria/Persona.aspx?id=44&lang=en
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=6&$top=1	http://europa.uniroma3.it/centrorossidoria/Persona.aspx?id=44
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=7&$top=1	http://torlone.dia.uniroma3.it/sistelab/merialdo.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=8&$top=1	http://www.un-industria.it/Public/Doc/orientamento_uunindustria-2013_merialdo.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=9&$top=1	http://www.dia.uniroma3.it/~sistinfo/Merialdo_Crescenzi.html
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=10&$top=1	http://www.merialdo.it/cgi-bin/documents/20041215152108-001.htm
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=11&$top=1	http://academic.research.microsoft.com/Author/327968/paolo-merialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=12&$top=1	https://about.me/pameri#!
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=13&$top=1	https://plus.google.com/107277355256289469657/posts
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=14&$top=1	http://www.economyup.it/tag/paolo-merialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=15&$top=1	https://www.researchgate.net/profile/Paolo_Merialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=16&$top=1	http://scholar.google.com/citations?user=njKmu5cAAAAJ&hl=en
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=17&$top=1	https://www.facebook.com/maurizio.merialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=18&$top=1	http://www.chefuturo.it/tag/paolo-merialdo/
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=19&$top=1	http://www.youreporter.it/trend/paolo_merialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=20&$top=1	http://www.youtube.com/watch?v=QQ6HtXq4N94
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=21&$top=1	https://it-it.facebook.com/giovanni.merialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=22&$top=1	http://www.researchgate.net/profile/Paolo_Merialdo/citations?sorting=recent&page=1
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=23&$top=1	https://sites.google.com/site/paolomerialdo/tesi-e-tirocini
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=24&$top=1	http://uniromatre.academia.edu/paolomerialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=25&$top=1	http://it.similarsites.com/site/merialdo.dia.uniroma3.it
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=26&$top=1	http://www.vldb.org/dblp/db/indices/a-tree/m/Merialdo:Paolo.html
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=27&$top=1	http://list.dia.uniroma3.it/pipermail/joboffers/2007q2/000018.html
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=28&$top=1	https://plus.google.com/115499978601734427398/posts
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=29&$top=1	http://sebd2015.dia.uniroma3.it/pdf/merialdo.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=30&$top=1	https://www.facebook.com/andrea.merialdo.9
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=31&$top=1	http://uniromatre.academia.edu/paolomerialdo/Papers
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=32&$top=1	http://luissenlabs.com/?advisor=paolo-merialdo
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=33&$top=1	http://www.tesionline.it/consult/preview.jsp?pag=1&idt=32872
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=34&$top=1	http://www.genealogy.math.ndsu.nodak.edu/id.php?id=114713
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=35&$top=1	http://ccs.ele.uniroma3.it/pdf/Esami%20Programmazione.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=36&$top=1	http://www.youtube.com/watch?v=VWJf7eARW1Q
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=37&$top=1	http://www.un-industria.it/Public/ImgInf/Merialdo_Paolo.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=38&$top=1	http://cabibbo.dia.uniroma3.it/eiiddr/
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=39&$top=1	https://groups.google.com/d/topic/giwroma3/qopo7K8UcRk
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=40&$top=1	http://www.db.unibas.it/users/mecca/papers.html
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=41&$top=1	http://informatica.ing.uniroma3.it/wp-content/uploads/2012/09/LII-secondo-semestre-04.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=42&$top=1	http://list.dia.uniroma3.it/pipermail/joboffers/2007q3/000028.html
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=43&$top=1	http://www.madeinitalya.com/start-up/4413-alfred.html
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=44&$top=1	http://www.romaprovinciacreativa.it/network/creativi-network/carlo-alberto-pratesi-paolo-merialdo-e-augusto-coppola-innovaction-lab/
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=45&$top=1	https://groups.google.com/d/topic/giwroma3/wbeEVNwRhaY
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=46&$top=1	http://www.agatinogrillo.it/google-devfest-roma-2014-universita-roma-tre-8-novembre-2014
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=47&$top=1	http://www.inf.uniroma3.it/?page_id=367
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=48&$top=1	http://informatica.ing.uniroma3.it/wp-content/uploads/2012/09/LII-secondo-semestre-03.pdf
-Paolo Merialdo	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='Paolo Merialdo'&$skip=49&$top=1	http://host.uniroma3.it/scuole/astre/pages/didattica/biennio_14-16/corsi/idea_innovativa.php
-=======
 abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=0&$top=1	https://it.linkedin.com/in/salvatore-abate-99160023
 abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=1&$top=1	http://www.paginebianche.it/A/Salvatore-Abate.html
 abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=2&$top=1	https://it-it.facebook.com/public/Salvatore-Abbate
@@ -100,4 +48,53 @@ abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Quer
 abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=47&$top=1	http://www.geometrifirenze.it/albodettaglio.asp?pkid=13
 abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=48&$top=1	http://www.tuugo.it/Companies/abbate-salvatore_1402096/0170001964276
 abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=49&$top=1	https://www.ricercare-imprese.it/marsala/odontoprotesi-abate-di-abate-andrea-e-abate-salvatore
->>>>>>> branch 'master' of https://github.com/DanielaGezzi/ProgettoBingSearch
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=50&$top=1	http://www.informazione-aziende.it/Aziende_quotazione_ABATE-SALVATORE
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=51&$top=1	http://www.icitta.it/abate_salvatore-2106451-a.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=52&$top=1	http://www.tuugo.it/Companies/abbate-salvatore_1402096/0170001964276
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=53&$top=1	http://www.tuugo.it/Companies/abbate-salvatore/0170001964275
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=54&$top=1	http://www.geometrifirenze.it/albodettaglio.asp?pkid=13
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=55&$top=1	http://www.coobiz.it/azienda/abate-salvatore-roma/co9337997/contatti
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=56&$top=1	http://www.unionesarda.it/articolo/cronaca/2015/12/14/la_maddalena_presentato_il_nuovo_libro_di_salvatore_abate-68-451367.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=57&$top=1	http://www.editori.regione.campania.it/it//autori/salvatore-abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=58&$top=1	https://www.ricercare-imprese.it/pomezia/caffe-carolina-di-abate-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=59&$top=1	http://necrologie.iltirreno.gelocal.it/necrologi/2015/provincia-47-livorno/citta-1919-cecina/615838-abbate-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=60&$top=1	http://www.treccani.it/enciclopedia/tag/salvatore-abate/2/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=61&$top=1	https://it.wikipedia.org/wiki/Mario_Abbate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=62&$top=1	https://it.wikipedia.org/wiki/Abbazia_benedettina_del_Santissimo_Salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=63&$top=1	https://misticmedia.wordpress.com/tag/salvatore-abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=64&$top=1	http://www.annunciverona.it/azienda.asp?a=455620
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=65&$top=1	http://www.coobiz.it/azienda/abate-salvatore-roggiano-gravina/co7182067/contatti
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=66&$top=1	http://www.telefonare.it/sicilia/san-teodoro-me/abate-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=67&$top=1	http://www.lafeltrinelli.it/libri/salvatore-abate/185396
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=68&$top=1	http://www.editelonline.it/1471177-1/abate-geom-salvatore-geometri-studi.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=69&$top=1	http://www.commercialista.com/professionista/salvatore-abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=70&$top=1	http://www.bluaziende.com/azienda/sicilia/pa/palermo/abate_salvatore/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=71&$top=1	http://www.bluaziende.com/azienda/toscana/fi/firenze/abate_salvatore/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=72&$top=1	http://www.poesieracconti.it/community/utenti/salvatore.it
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=73&$top=1	http://www.hoeplieditore.it/autore-abate-salvatore-816.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=74&$top=1	http://www.whitepages.com/name/Salvatore-Abate/NY
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=75&$top=1	http://commercialisti.professionistipalermo.it/4850
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=76&$top=1	http://www.imprese-it.com/Companie/57819-Abate_Salvatore.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=77&$top=1	http://catania.livesicilia.it/tag/salvatore-abate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=78&$top=1	http://it.blastingnews.com/redazione/salvatore-abbate/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=79&$top=1	http://www.prontoimprese.it/villafranca-di-verona/commercialista/abate-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=80&$top=1	http://www.imprese-it.com/Companie/1466882-Abate_Salvatore.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=81&$top=1	http://www.impresaveloce.it/cod-127774-19/abate-salvatore.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=82&$top=1	http://taormina.virgilio.it/mappa/azienda/RDBLOP17470313/17164762/abbate-salvatore/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=83&$top=1	http://www.misterimprese.it/sicilia/trapani/marsala/agenti-e-rappresentanti-di-commercio/1977598.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=84&$top=1	http://www.liberissimo.net/files/CURRICULUM%20SALVATORE%20ABATE..pdf
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=85&$top=1	http://www.radioradicale.it/soggetti/salvatore-abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=86&$top=1	http://it.viadeo.com/it/profile/salvatore.abate
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=87&$top=1	http://www.telefonare.it/campania/santantonio-abate/brasiello-salvatore
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=88&$top=1	http://divisare.com/authors/10015223
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=89&$top=1	https://plus.google.com/107584715115097305404
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=90&$top=1	http://it.viadeo.com/it/profile/salvatore.abate2
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=91&$top=1	http://www.siciliaedonna.it/notizie-attualita/salvatore-abate-compagnia-delle-opere/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=92&$top=1	http://www.empresite.it/ALBA-DI-ABATE-SALVATORE-C-SAS.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=93&$top=1	http://www.impresaitalia.info/kk03276855/abate-di-salvatore-e-luigi-abate-e-c-(sas)/lucera.aspx
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=94&$top=1	http://www.impresaveloce.it/cod-135705-19/abate-salvatore.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=95&$top=1	http://www.empresite.it/DRAGON-DI-ABATE-SALVATORE.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=96&$top=1	http://www.oraridiapertura24.it/filiale/Salgareda%2520%2528Tv%2529-Dr.%2520Abate%2520G.%2520Salvatore-191868K.html
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=97&$top=1	http://www.tuttocitta.it/mappa/borgosesia/via-abate-salvatore-lirelli
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=98&$top=1	http://www.mondadoristore.it/libri/Salvatore-Abate/aut00025560/
+abate salvatore 	https://api.datamarket.azure.com/Data.ashx/Bing/Search/Web?Query='abate salvatore '&$skip=99&$top=1	http://www.autocarri24.com/azienda-abate-salvatore-paterno-2274
