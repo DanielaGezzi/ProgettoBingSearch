@@ -16,7 +16,9 @@ import org.apache.commons.io.IOUtils;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.amazonaws.services.s3.model.S3Object;
 import com.dropbox.core.DbxException;
 import com.dropbox.core.v2.files.UploadErrorException;
 
@@ -33,7 +35,7 @@ public class DownloadPages {
 //			String[] a = currentLine.split("/");			
 			
 			/*Il file lo rinomino con l'url (Solo il dominio puro, www. ecc.)*/
-			downloadURLtoS3("prova-agiw", "provadl2/page"+cont, currentLine);
+			downloadURLtoS3("prova-agiw", "provadaEC2/page"+cont, currentLine);
 			
 			/*Il file lo rinomino con l'url (Solo il dominio puro, www. ecc.)*/
 //			downloadFromURL("/Users/RobertoNunziato/Desktop/Prova/"+cont+".html", currentLine);
@@ -121,6 +123,8 @@ public class DownloadPages {
 	         (obbligatoria sennò aws scapoccia)*/
 			ObjectMetadata meta =  new ObjectMetadata();
 			byte[] bytes = IOUtils.toByteArray(in);
+			//byte[] bytesURL = 
+			
 			Long contentLength = Long.valueOf(bytes.length);
 			meta.setContentLength(contentLength);
 			 conn.disconnect();
@@ -136,6 +140,26 @@ public class DownloadPages {
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }
-	
+	}
+public void downloadFromS3(String bucket_name, String key_name) throws IOException{;
+
+		    AmazonS3 aws_conn = new AmazonS3Client(new ProfileCredentialsProvider());        
+      
+			/*per effettuare l'acceso con qualsiasi account aws
+			*  
+			AWSCredentials credentials = new BasicAWSCredentials(
+					"YourAccessKeyID", 
+					"YourSecretAccessKey");
+			
+			AmazonS3 aws_conn = new AmazonS3Client(credentials);
+			*/
+			
+			  
+			S3Object object = aws_conn.getObject(new GetObjectRequest(bucket_name, key_name));
+			
+			/*qui andrebbe implementata la trasformazione/adattamento
+			 * in json per poi dirottare l'oggetto ad elasticsearch
+			 *  per essere indicizzato*/
+		
 	}
 }
