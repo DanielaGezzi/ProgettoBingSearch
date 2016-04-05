@@ -25,21 +25,20 @@ import com.dropbox.core.v2.files.UploadErrorException;
 public class DownloadPages {
 
 	public void executeDownload() throws IOException, UploadErrorException, DbxException {
-		BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/listaResults.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/listaQuery.txt"));
 		String currentLine;		
+		
+		String bucket_name = "prova-agiw";	
+		String key_name = "prova8/page";	
 		
 		int cont=0;
 		
 		/*Mi scorro tutta la lista degli URL e lancio lo scarimento dei file*/
 		while ((currentLine = br.readLine()) != null){
-//			String[] a = currentLine.split("/");			
-			
-			/*Il file lo rinomino con l'url (Solo il dominio puro, www. ecc.)*/
-			downloadURLtoS3("prova-agiw", "provadaEC2/page"+cont, currentLine);
-			
-			/*Il file lo rinomino con l'url (Solo il dominio puro, www. ecc.)*/
-//			downloadFromURL("/Users/RobertoNunziato/Desktop/Prova/"+cont+".html", currentLine);
-//			downloadFromURL("/Users/RobertoNunziato/Desktop/Prova/"+a[2]+".html", currentLine);
+			String[] a = currentLine.split("\t");
+			String url = a[2];
+			String query = a[0];
+			downloadURLIntoS3(bucket_name, key_name+cont, url, query);
 			cont++;
 		}
 		
@@ -90,7 +89,8 @@ public class DownloadPages {
 	
 	}
 	
-	public void downloadURLtoS3(String bucket_name, String key_name, String URL) throws UploadErrorException, DbxException {
+	public void downloadURLIntoS3(String bucket_name, String key_name, 
+			String URL, String query) throws UploadErrorException, DbxException {
 	    URL url;
 
 	    try {
@@ -123,10 +123,11 @@ public class DownloadPages {
 	         (obbligatoria sennò aws scapoccia)*/
 			ObjectMetadata meta =  new ObjectMetadata();
 			byte[] bytes = IOUtils.toByteArray(in);
-			//byte[] bytesURL = 
 			
 			Long contentLength = Long.valueOf(bytes.length);
 			meta.setContentLength(contentLength);
+			meta.addUserMetadata("URL", URL);
+			meta.addUserMetadata("QUERY", query);
 			 conn.disconnect();
 			/*
 			imposto input2 come nuovo input stream per aws e creo il file nel bucket
@@ -140,26 +141,5 @@ public class DownloadPages {
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }
-	}
-public void downloadFromS3(String bucket_name, String key_name) throws IOException{;
-
-		    AmazonS3 aws_conn = new AmazonS3Client(new ProfileCredentialsProvider());        
-      
-			/*per effettuare l'acceso con qualsiasi account aws
-			*  
-			AWSCredentials credentials = new BasicAWSCredentials(
-					"YourAccessKeyID", 
-					"YourSecretAccessKey");
-			
-			AmazonS3 aws_conn = new AmazonS3Client(credentials);
-			*/
-			
-			  
-			S3Object object = aws_conn.getObject(new GetObjectRequest(bucket_name, key_name));
-			
-			/*qui andrebbe implementata la trasformazione/adattamento
-			 * in json per poi dirottare l'oggetto ad elasticsearch
-			 *  per essere indicizzato*/
-		
 	}
 }
