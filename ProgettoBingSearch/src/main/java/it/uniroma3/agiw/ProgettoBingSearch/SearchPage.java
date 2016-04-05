@@ -12,8 +12,8 @@ import java.util.Base64;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import it.uniroma3.agiw.ProgettoBingSearchCreateFile.CreateFileQuery;
-import it.uniroma3.agiw.ProgettoBingSearchCreateFile.CreateFileResults;
+import it.uniroma3.agiw.ProgettoBingSearch.createFile.CreateFileQuery;
+import it.uniroma3.agiw.ProgettoBingSearch.createFile.CreateFileResults;
 
 public class SearchPage {
 	
@@ -27,7 +27,7 @@ public class SearchPage {
     	
 	public void executeQuery(String q, int n_results) throws IOException{
 	  	/*Uso della Api di Bing: trovato su Internet, stampa la lista degli Url della ricerca*/
-		String accountKey = "AAAAAAAAAAAAAAA"; 
+		String accountKey = "tiJffDN1WJnkkJGEBrNtraDEsQaVoSmaplS++vI7S3A"; 
 	    String accountKeyEnc = Base64.getEncoder().encodeToString((accountKey + ":" + accountKey).getBytes());
 	    String bingUrlPattern = "";
 	    
@@ -36,10 +36,6 @@ public class SearchPage {
 	    	bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
 	    else if(n_results == 2)
 	    	bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON&$skip=50&$top=50";    
-//	    String bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
-//		https://api.datamarket.azure.com/Bing/Search/Web?Query=%27%Paolo%20Merialdo%27&Market=%27it-IT%27&$format=JSON	    
-//	    String sCurrentLine;
-//	    BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/cognomi.txt"));
 	        
 	    String query = URLEncoder.encode(q, Charset.defaultCharset().name());
 	    String bingUrl = String.format(bingUrlPattern, query);
@@ -79,7 +75,7 @@ public class SearchPage {
 	            this.file2.writeFileResults(aResult);
          
 //	            System.out.println("URL risultante : "+aResult.get("Url"));
-//	            System.out.println("Query di partenza : "+aQuery.get("uri"));
+	            System.out.println("Query di partenza : "+aQuery.get("uri"));
 //	            System.out.println();
 //	            System.out.println("Ho trovato "+i+" risultati");
 

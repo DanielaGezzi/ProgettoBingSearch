@@ -13,7 +13,7 @@ public class GeneratoreLista {
 	
 	public void creaLista() throws IOException{
     	String currentLine;
-    	BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/ing.txt"));
+    	BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/ingegneriRoma"));
     	while ((currentLine = br.readLine()) != null) {
     		this.lista.add(currentLine);
     	}

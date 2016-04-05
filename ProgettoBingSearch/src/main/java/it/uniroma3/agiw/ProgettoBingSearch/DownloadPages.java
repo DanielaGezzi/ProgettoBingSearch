@@ -19,12 +19,10 @@ import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.S3Object;
-import com.dropbox.core.DbxException;
-import com.dropbox.core.v2.files.UploadErrorException;
 
 public class DownloadPages {
 
-	public void executeDownload() throws IOException, UploadErrorException, DbxException {
+	public void executeDownload() throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("../ProgettoBingSearch/src/listaQuery.txt"));
 		String currentLine;		
 		
@@ -45,7 +43,7 @@ public class DownloadPages {
 		System.out.println("Ho letto "+cont+" righe dal file dei risultati");
 	}
 	
-	public void downloadFromURL(String filename, String URL) throws UploadErrorException, DbxException {
+	public void downloadFromURL(String filename, String URL){
 	    URL url;
 
 	    //Aggiunto
@@ -89,8 +87,7 @@ public class DownloadPages {
 	
 	}
 	
-	public void downloadURLIntoS3(String bucket_name, String key_name, 
-			String URL, String query) throws UploadErrorException, DbxException {
+	public void downloadURLIntoS3(String bucket_name, String key_name,String URL, String query){
 	    URL url;
 
 	    try {
