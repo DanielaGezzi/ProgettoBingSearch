@@ -64,9 +64,6 @@ private static String prefix = "prova8/";
 
 		S3Object object = connection.getObject(new GetObjectRequest(bucket_name, key_name));
 		
-		System.out.println(object.getObjectMetadata().getUserMetaDataOf("URL")
-					+"\t"+object.getObjectMetadata().getUserMetaDataOf("QUERY"));
-		/*
 		 String content = "";
 		 BufferedReader reader = new BufferedReader(
 				 new InputStreamReader(object.getObjectContent()));
@@ -74,18 +71,20 @@ private static String prefix = "prova8/";
 	            String line = reader.readLine();
 	            if (line == null) break;
 	            content = content+line;
-	            System.out.println("    " + line);
 	        }
-	        System.out.println();
-	    }
-		Documento d = new Documento (query,url,content);
+	       
+	    
+	
+		String url = object.getObjectMetadata().getUserMetaDataOf("URL");
+		String query = object.getObjectMetadata().getUserMetaDataOf("QUERY");
+		Documento d = new Documento (content,url,query);
 		
-		elasticSearchIndexer(d);
+		//elasticSearchIndexer(d);
 		
 		/*qui andrebbe implementata la trasformazione/adattamento
 		 * in json per poi dirottare l'oggetto ad elasticsearch
 		 *  per essere indicizzato*/
-		
+		System.out.println(d.getContent()+"\n\n"+d.getURL()+"\n\n"+d.getQuery());
 		
 	    
 	}
