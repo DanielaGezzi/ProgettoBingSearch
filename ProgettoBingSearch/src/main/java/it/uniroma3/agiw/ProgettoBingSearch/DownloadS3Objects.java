@@ -72,21 +72,7 @@ private static String prefix = "prova8/";
 	            if (line == null) break;
 	            content = content+line;
 	        }
-	       
-	    
-	
-		String url = object.getObjectMetadata().getUserMetaDataOf("URL");
-		String query = object.getObjectMetadata().getUserMetaDataOf("QUERY");
-		Documento d = new Documento (content,url,query);
-		
-		//elasticSearchIndexer(d);
-		
-		/*qui andrebbe implementata la trasformazione/adattamento
-		 * in json per poi dirottare l'oggetto ad elasticsearch
-		 *  per essere indicizzato*/
-		System.out.println(d.getContent()+"\n\n"+d.getURL()+"\n\n"+d.getQuery());
-		
-	    
+	       	    
 	}
 }
 

@@ -16,9 +16,7 @@ import org.apache.commons.io.IOUtils;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
-import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.ObjectMetadata;
-import com.amazonaws.services.s3.model.S3Object;
 
 public class DownloadPages {
 
@@ -41,14 +39,11 @@ public class DownloadPages {
 		}
 		
 		System.out.println("Ho letto "+cont+" righe dal file dei risultati");
+		br.close();
 	}
 	
 	public void downloadFromURL(String filename, String URL){
 	    URL url;
-
-	    //Aggiunto
-	    //DbxRequestConfig config = new DbxRequestConfig("dropbox/java-tutorial", "en_US");
-	    //DbxClientV2 client = new DbxClientV2(config, ACCESS_TOKEN);
 
 	    try {
 	        url = new URL(URL);
@@ -72,9 +67,6 @@ public class DownloadPages {
 	        FileOutputStream fos = new FileOutputStream(filename);
 	        fos.write(b);
 	        fos.close();
-	        
-	        //Aggiunto
-	        //FileMetadata m = client.files().uploadBuilder(filename).uploadAndFinish(in);
 	        
 	        conn.disconnect();
 	    
