@@ -10,10 +10,10 @@ public class CreateFileQuery {
 	private FileWriter listaQuery;
 
 	public CreateFileQuery() throws IOException{
-		this.listaQuery = new FileWriter("../ProgettoBingSearch/src/listaQueryRoma.txt");
+		this.listaQuery = new FileWriter("../ProgettoBingSearch/src/listaQuery.txt");
 	}
 	
-	public void writeFileQuery(String query,JSONObject aQuery, JSONObject aResult) throws IOException {;
+	public void writeFileQuery(String query,JSONObject aQuery, JSONObject aResult) throws IOException {
 		this.listaQuery.append(query+"\t"+aQuery.get("uri")+"\t"+aResult.get("Url")+"\n");
 	}
 

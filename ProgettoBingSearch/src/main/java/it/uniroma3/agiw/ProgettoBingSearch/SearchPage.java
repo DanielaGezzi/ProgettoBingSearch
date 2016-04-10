@@ -27,7 +27,7 @@ public class SearchPage {
     	
 	public void executeQuery(String q, int n_results) throws IOException{
 		
-		String accountKey = "AAAAAAAAAAAA"; 
+		String accountKey = "";  //chiave account Bing 
 	    String accountKeyEnc = Base64.getEncoder().encodeToString((accountKey + ":" + accountKey).getBytes());
 	    String bingUrlPattern = "";
 	    
@@ -36,7 +36,9 @@ public class SearchPage {
 	    	bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON";
 	    else if(n_results == 2)
 	    	bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON&$skip=50&$top=50";    
-	        
+	    else if(n_results == 3)
+	    	bingUrlPattern = "https://api.datamarket.azure.com/Bing/Search/Web?Query=%%27%s%%27&$format=JSON&$skip=100&$top=100";    	    	
+	    
 	    String query = URLEncoder.encode(q, Charset.defaultCharset().name());
 	    String bingUrl = String.format(bingUrlPattern, query);
 	
